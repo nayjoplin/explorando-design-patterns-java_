@@ -1,0 +1,53 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.2">
+  <diagram name="Design Patterns UML" id="MRbbjO1DEFIWozVQaqDB">
+    <mxGraphModel dx="4350" dy="2900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-1" value="SingletonExample" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=30;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-174" y="91" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-2" value="- instance: SingletonExample&#xa;+ getInstance(): SingletonExample" style="text;strokeColor=none;fillColor=none;" vertex="1" parent="YcvRxp8qmYxcWP2mAwnQ-1">
+          <mxGeometry y="30" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-3" value="Operation (interface)" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="56" y="91" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-4" value="+ execute(a:int, b:int): int" style="text;strokeColor=none;fillColor=none;" vertex="1" parent="YcvRxp8qmYxcWP2mAwnQ-3">
+          <mxGeometry y="30" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-5" value="SumOperation" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="56" y="211" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-6" value="+ execute(a:int, b:int): int" style="text;strokeColor=none;fillColor=none;" vertex="1" parent="YcvRxp8qmYxcWP2mAwnQ-5">
+          <mxGeometry y="30" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-7" value="MultiplyOperation" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="56" y="311" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-8" value="+ execute(a:int, b:int): int" style="text;strokeColor=none;fillColor=none;" vertex="1" parent="YcvRxp8qmYxcWP2mAwnQ-7">
+          <mxGeometry y="30" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-9" value="StrategyExample" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="286" y="151" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-10" value="- operation: Operation&#xa;+ setOperation(op: Operation)&#xa;+ execute(a:int, b:int): int" style="text;strokeColor=none;fillColor=none;" vertex="1" parent="YcvRxp8qmYxcWP2mAwnQ-9">
+          <mxGeometry y="30" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-11" value="FacadeExample" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="526" y="91" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-12" value="+ start()" style="text;strokeColor=none;fillColor=none;" vertex="1" parent="YcvRxp8qmYxcWP2mAwnQ-11">
+          <mxGeometry y="30" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-13" value="CPU / Memory / Disk" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="526" y="211" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-14" style="endArrow=block;endFill=1;" edge="1" parent="1" source="YcvRxp8qmYxcWP2mAwnQ-5" target="YcvRxp8qmYxcWP2mAwnQ-3" />
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-15" style="endArrow=block;endFill=1;" edge="1" parent="1" source="YcvRxp8qmYxcWP2mAwnQ-7" target="YcvRxp8qmYxcWP2mAwnQ-3" />
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-16" style="endArrow=open;endFill=0;dashed=1;" edge="1" parent="1" source="YcvRxp8qmYxcWP2mAwnQ-9" target="YcvRxp8qmYxcWP2mAwnQ-3" />
+        <mxCell id="YcvRxp8qmYxcWP2mAwnQ-17" style="endArrow=open;endFill=0;dashed=1;" edge="1" parent="1" source="YcvRxp8qmYxcWP2mAwnQ-11" target="YcvRxp8qmYxcWP2mAwnQ-13" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
