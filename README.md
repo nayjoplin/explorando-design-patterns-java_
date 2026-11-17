@@ -1,4 +1,15 @@
-# Explorando Padrões de Projeto em Java
+<div align="center">
+
+![Design Patterns Java](assets/cover.svg)
+
+# Design Patterns Java
+
+Exemplos de Singleton, Strategy e Facade aplicados em Java
+
+**Bootcamp Santander + DIO**
+
+</div>
+
 
 Este projeto implementa **padrões de projeto clássicos** em Java puro, sem frameworks externos, para reforçar os conceitos de **Singleton, Strategy e Facade**.
 
